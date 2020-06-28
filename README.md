@@ -1,6 +1,18 @@
-# ARE-rt
+## About
 
-This code takes as input a banners dataset and generates rules for discovering and annotating IoT devices.
+This repo contains supplementary material (code and datasets) for the following paper:
+
+        "Using Application Layer Banner Data to automatically identify IoT devices"
+        Talha Javed, Muhammad Haseeb, Muhammad Abdullah, and Mobin Javed
+        ACM SIGCOMM Computer and Communication Review (CCR) Issue 50, Volume 3, July 2020 
+
+The CCR paper is a reproducibility study of the following Usenix Security 2018 paper:
+
+        "Acquistional Rule Based Engine for Discovering Internet-of-Things Devices"
+        Xuang Feng, Qiang Li, Haining Wang, and Limin Sun
+        Usenix Security 2018
+
+The code in this repo implements the ARE engine proposed in the Usenix Security 2018 paper. The engine takes a banners dataset as input and generates rules for discovering and annotating IoT devices. Potentially differing design choices by the authors of this code (compared to the original ARE paper) are documented in Section 3 of the CCR paper.  
 
 ---------------
 Pre-requisites
@@ -128,11 +140,3 @@ To find precision and recall numbers for the rules, simply run the code as:
     $ python analyze.py
 
 It will read the input banners file (located in config.BANNERS_FILE) and rules.csv file to perform analysis. The analysis results are saved in "analysis.txt" file in the config.OUT_PATH directory.
-
-## Paper Title
-Using Application Layer Banner Data to automatically identify IoT devices
-
-## Authors
-Talha Javed Mukhtar, Muhammad Haseeb, Muhammad Abdullah, Mobin Javed
-
-
