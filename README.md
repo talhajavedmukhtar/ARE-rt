@@ -25,7 +25,7 @@ Setup
 --------------
 - Install the required dependencies using: pip3 install -r requirements.txt
 
-- Rename "config_sample.py" to "config.py" and configure the following parameters:
+- Configure the following parameters in “config.py”:
 
         BANNERS_FILE                Path to the input banners file which contains the banners.
         NUM_PROCESS_BANNERS         Limit for number of banners to process (if not all)
@@ -140,3 +140,15 @@ To find precision and recall numbers for the rules, simply run the code as:
     $ python analyze.py
 
 It will read the input banners file (located in config.BANNERS_FILE) and rules.csv file to perform analysis. The analysis results are saved in "analysis.txt" file in the config.OUT_PATH directory.
+
+
+--------------------
+Important Note
+--------------------
+You must configure the CSE to search the entire web. Please use the following steps to configure the CSE correctly:
+
+1) Go to https://cse.google.com/cse/all.
+2) Click on the "Add" button. Provide any name of your liking for the search engine and enter any URL in the "Sites to search" box for now. Now, click on "CREATE" button at the bottom. You'll see a page containing the text "Congratulations! You've successfully created your search engine".
+3) On this page, right next to "Modify your search engine", click on the "Control Panel" button. This will take you to the CSE settings/setup page. Your Search engine ID is also displayed in this page.
+4) Scroll down and turn on the button right next to "Search the entire web" and wait for a second until the changes are saved.
+5) Finally, on the same page under "Sites to search", delete the URL you provided in the first step. Your CSE is now configured to search the entire web.
