@@ -4,5 +4,5 @@ pandas==0.25.3
 beautifulsoup4==4.8.2
 google_api_python_client==1.7.11
 pyenchant==2.0.0
-PyPDF2==1.27.5
+PyPDF2==1.27.9
 scikit_learn==0.22.1
